@@ -115,6 +115,29 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Anuncio.h" />
+    <ClInclude Include="DataBase.h" />
+    <ClInclude Include="Entrada.h" />
+    <ClInclude Include="Facebook.h" />
+    <ClInclude Include="Gerenciador.h" />
+    <ClInclude Include="iSaida.h" />
+    <ClInclude Include="Json.h" />
+    <ClInclude Include="SMS.h" />
+    <ClInclude Include="Texto.h" />
+    <ClInclude Include="WhatsApp.h" />
+    <ClInclude Include="Xml.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Anuncio.cpp" />
+    <ClCompile Include="DataBase.cpp" />
+    <ClCompile Include="Entrada.cpp" />
+    <ClCompile Include="Facebook.cpp" />
+    <ClCompile Include="Gerenciador.cpp" />
+    <ClCompile Include="Json.cpp" />
+    <ClCompile Include="SMS.cpp" />
+    <ClCompile Include="Texto.cpp" />
+    <ClCompile Include="WhatsApp.cpp" />
+    <ClCompile Include="Xml.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
