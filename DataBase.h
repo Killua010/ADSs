@@ -1,7 +1,6 @@
 #pragma once
 #include "Entrada.h"
-class DataBase :
-	public Entrada
+class DataBase : public Entrada
 {
 public:
 	DataBase();
