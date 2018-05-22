@@ -11,6 +11,7 @@ Entrada::~Entrada()
 
 void Entrada::inicializar(string params)
 {
-	cout << "Base de dados Inicializado com as seguintes configurações: " << params << endl;
-	PAUSA;
+	char cOpcao;
+	cout << "Base de dados Inicializada com as seguintes configurações: " << params << endl;
+	cin >> cOpcao;
 }

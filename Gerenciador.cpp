@@ -26,22 +26,26 @@ void Gerenciador::carregar()
 	case '1':
 		cout << "Inicializando DataBase !!!" << endl;
 		entrada.inicializar("DataBase");
+		advertisement = db.ler();
 		cin >> cOpcao;
 		break;
 	case '2':
 		cout << "Inicializando Json !!!" << endl;
 		entrada.inicializar("Json");
+		advertisement = json.ler();
 		cin >> cOpcao;
 		break;
 
 	case '3':
 		cout << "Inicializando XML !!!" << endl;
 		entrada.inicializar("XML");
+		advertisement = xml.ler();
 		cin >> cOpcao;
 		
 	case '4':
 		cout << "Inicializando Texto !!!" << endl;
 		entrada.inicializar("Texto");
+		advertisement = txt.ler();
 		cin >> cOpcao;
 		break;
 	case '0':
@@ -53,7 +57,6 @@ void Gerenciador::carregar()
 		cin >> cOpcao;
 		break;
 	}
-	cout << "Base de Dados Carregada com Sucesso!!!" << endl;
 }
 
 void Gerenciador::disparar()
@@ -70,20 +73,20 @@ void Gerenciador::disparar()
 	{
 		case '1':
 			cout << "Disparando Anúncios para WhatsApp..." << endl;
-			whatsApp->enviar(anuncios);
+			whatsApp->enviar(advertisement);
 			cout << "Anúncios Disparados com Sucesso !!!" << endl;
 			cin >> cOpcao;
 			break;
 		case '2':
 			cout << "Disparando Anúncios para SMS..." << endl;
-			sms->enviar(anuncios);
+			sms->enviar(advertisement);
 			cout << "Anúncios Disparados com Sucesso !!!" << endl;
 			cin >> cOpcao;
 			break;
 
 		case '3':
 			cout << "Disparando Anúncios para Facebook..." << endl;
-			faceBook->enviar(anuncios);
+			faceBook->enviar(advertisement);
 			cout << "Anúncios Disparados com Sucesso !!!" << endl;
 			cin >> cOpcao;
 		case '0':

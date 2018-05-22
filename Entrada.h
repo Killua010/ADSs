@@ -14,7 +14,11 @@ class Entrada
 public:
 	Entrada();
 	~Entrada();
-	list<Anuncio> ler();
+	virtual list<Anuncio> ler();
 	void inicializar(string params);
+
+private:
+	Anuncio *ads;
+	list<Anuncio> advertisement;
 };
 
